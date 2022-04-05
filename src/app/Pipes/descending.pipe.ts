@@ -9,7 +9,7 @@ export class DescendingPipe implements PipeTransform {
 
     if(Array.isArray(value)){
       return value.sort((a,b) => 0 - (a > b ? 1 : -1));
-      // console.log('desc');
+     
     }
 
     return value;
