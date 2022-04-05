@@ -1,0 +1,19 @@
+<h3 class="text-center">Names in Descending Order</h3>
+
+<div class="container">
+
+<hr>
+<table class="table">
+      <tr>
+        <th scope="col">Name</th>
+        
+      </tr>
+    <tbody>
+      <tr *ngFor="let d of data |descending">
+        <td>{{ d }}</td>
+        
+      </tr>
+     
+    </tbody>
+  </table>  
+</div>

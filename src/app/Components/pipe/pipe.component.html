@@ -1,0 +1,26 @@
+<h3 class="text-center">Employee Details</h3>
+
+<div class="container">
+
+<input type="text" placeholder="search employee" [(ngModel)]="nameSearch">
+<hr>
+<table class="table">
+      <tr>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+
+      </tr>
+    <tbody>
+      <tr *ngFor="let d of data |search:nameSearch">
+        <td>{{ d.fname }}</td>
+        <td>{{ d.lname}}</td>
+        <td>{{ d.email }}</td>
+
+        
+      </tr>
+     
+    </tbody>
+  </table>  
+</div>
+
